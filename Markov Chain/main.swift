@@ -8,5 +8,12 @@
 
 import Foundation
 
-print("Hello, World!")
+func main() {
+	let m = Matrix([[4, 1], [1, 3]])
+	let v = Vector([1, 2])
+	let sol = cg_solver(A: m, b: v)
+	print(sol)
+}
+
+main()
 
