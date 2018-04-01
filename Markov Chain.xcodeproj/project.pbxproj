@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		F90BEB84206DE9DB00BCA0C5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90BEB83206DE9DB00BCA0C5 /* main.swift */; };
+		F90BEB8B206DE9F000BCA0C5 /* vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90BEB8A206DE9F000BCA0C5 /* vector.swift */; };
+		F90BEB8D206DF41B00BCA0C5 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90BEB8C206DF41B00BCA0C5 /* constants.swift */; };
+		F90BEB8F206E064300BCA0C5 /* matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90BEB8E206E064300BCA0C5 /* matrix.swift */; };
+		F9371A66206F57F800944724 /* solver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9371A65206F57F800944724 /* solver.swift */; };
+		F9371A6820701F7F00944724 /* graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9371A6720701F7F00944724 /* graph.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,11 @@
 /* Begin PBXFileReference section */
 		F90BEB80206DE9DB00BCA0C5 /* Markov Chain */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Markov Chain"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90BEB83206DE9DB00BCA0C5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F90BEB8A206DE9F000BCA0C5 /* vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vector.swift; sourceTree = "<group>"; };
+		F90BEB8C206DF41B00BCA0C5 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		F90BEB8E206E064300BCA0C5 /* matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matrix.swift; sourceTree = "<group>"; };
+		F9371A65206F57F800944724 /* solver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = solver.swift; sourceTree = "<group>"; };
+		F9371A6720701F7F00944724 /* graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = graph.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				F90BEB83206DE9DB00BCA0C5 /* main.swift */,
+				F90BEB8A206DE9F000BCA0C5 /* vector.swift */,
+				F9371A6720701F7F00944724 /* graph.swift */,
+				F90BEB8E206E064300BCA0C5 /* matrix.swift */,
+				F9371A65206F57F800944724 /* solver.swift */,
+				F90BEB8C206DF41B00BCA0C5 /* constants.swift */,
 			);
 			path = "Markov Chain";
 			sourceTree = "<group>";
@@ -120,7 +135,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F90BEB8F206E064300BCA0C5 /* matrix.swift in Sources */,
+				F9371A66206F57F800944724 /* solver.swift in Sources */,
+				F90BEB8B206DE9F000BCA0C5 /* vector.swift in Sources */,
 				F90BEB84206DE9DB00BCA0C5 /* main.swift in Sources */,
+				F9371A6820701F7F00944724 /* graph.swift in Sources */,
+				F90BEB8D206DF41B00BCA0C5 /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
