@@ -16,9 +16,7 @@ func main() {
 	g.add_edge(node_1: g.node("A"), node_2: g.node("B"))
 	print(g)
 	print(g.has_edge(g.edge(node_1: g.node("A"), node_2: g.node("B"))))
-	let _ = g.remove_edge(node_1: g.node("A"), node_2: g.node("B"))
-	print(g)
-	print(g.has_edge(g.edge(node_1: g.node("A"), node_2: g.node("B"))))
+	print(g.has_edge(g.edge(node_1: g.node("B"), node_2: g.node("A"))))
 }
 
 main()

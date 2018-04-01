@@ -15,7 +15,7 @@ class Graph : CustomStringConvertible {
 	typealias node_type = Node
 	typealias edge_type = Edge
 	
-	struct Node {
+	struct Node : CustomStringConvertible {
 		private var id_: size_type
 		private var name_: String
 	
@@ -27,6 +27,11 @@ class Graph : CustomStringConvertible {
 		fileprivate init(id: size_type, name: String) {
 			self.id_ = id
 			self.name_ = name
+		}
+		
+		var description: String {
+			let res: String = "{ID: \(self.id_), Name: \(self.name_)}"
+			return(res)
 		}
 		
 		var id: size_type {
@@ -56,7 +61,7 @@ class Graph : CustomStringConvertible {
 		}
 	}
 	
-	struct Edge {
+	struct Edge : CustomStringConvertible {
 		private var id_: size_type
 		private var val_: real_type
 		private var node_1_: node_type
@@ -75,6 +80,12 @@ class Graph : CustomStringConvertible {
 			self.node_1_ = node_1
 			self.node_2_ = node_2
 		}
+		
+		var description: String {
+			let res = "{ID: \(self.id_), Node 1: \(self.node_1_.name), Node 2: \(self.node_2_.name), p: \(self.val_)}"
+			return(res)
+		}
+		
 		
 		var id: size_type {
 			get {return(self.id_)}
@@ -119,13 +130,13 @@ class Graph : CustomStringConvertible {
 	var description: String {
 		var res: String = "Number of Nodes: \(self.num_nodes)\nNumber of Edges: \(self.num_edges)\nNodes: "
 		for e in self.nodes {
-			res += "{\(e.key), \(e.value)}, "
+			res += "\(e.value), "
 		}
 		res += "\nEdges: "
 		for e in self.edges {
-			res += "{Node 1: \(e.value.node_1), Node 2: \(e.value.node_2)}, "
+			res += "\(e.value), "
 		}
-		return(res)
+		return(res + "\n")
 	}
 	
 	var num_nodes: size_type {return(size_type(self.nodes.count))}
